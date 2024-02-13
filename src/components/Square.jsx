@@ -1,7 +1,7 @@
 import React from "react";
 import { FormControl } from "react-bootstrap";
 
-function Square({ id, value, disabled, style, onChange }) {
+export default function Square({ id, value, disabled, style, onChange }) {
   return (
     <FormControl
       className="square"
@@ -15,5 +15,3 @@ function Square({ id, value, disabled, style, onChange }) {
     />
   );
 }
-
-export default Square;

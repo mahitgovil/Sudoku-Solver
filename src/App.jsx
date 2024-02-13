@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import SudokuSolver from "./components/SudokuSolver";
 
-function App() {
+export default function App() {
   return (
     <Container className="text-center">
       <h1 className="mt-3">Sudoku Solver</h1>
@@ -11,5 +11,3 @@ function App() {
     </Container>
   );
 }
-
-export default App;

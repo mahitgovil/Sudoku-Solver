@@ -1,7 +1,13 @@
 import React from "react";
 import Square from "./Square";
 
-function Board({ startGrid, grid, onChange, disabled, popover }) {
+export default function Board({
+  startGrid,
+  grid,
+  onChange,
+  disabled,
+  popover,
+}) {
   const renderSquares = () => {
     const squares = [];
 
@@ -28,5 +34,3 @@ function Board({ startGrid, grid, onChange, disabled, popover }) {
 
   return <div className="sudoku-grid shadow">{renderSquares()}</div>;
 }
-
-export default Board;
